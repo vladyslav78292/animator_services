@@ -243,6 +243,7 @@ article > div:first-of-type {
 article > div > div {
   display: flex;
   margin-top: 30px;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   width: 90vw;
@@ -371,6 +372,7 @@ iframe {
 
 footer > div > a {
   color: white;
+  text-decoration: none;
 }
 
 section {
@@ -482,13 +484,18 @@ section {
   margin-bottom: 0;
 }
 
+body a {
+  color: black;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .box {
     width: 310px;
   }
 
   article > div > div {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   header {
@@ -503,6 +510,10 @@ section {
   .offset-lg-1 > span,
   .offset-lg-1 > p {
     text-align: center;
+  }
+  .mb-4 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -545,6 +556,9 @@ section {
     margin-top: 116px;
   }
 
+  .offset-lg-1 > span {
+    font-size: 36px;
+  }
   footer {
     padding: 20px 16px;
   }
